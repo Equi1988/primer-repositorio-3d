@@ -12,8 +12,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* width: 100%;
-    max-width: 1920px; */
+    width: 100%;
 }
 
 /*{
@@ -78,10 +77,16 @@ header nav ul li{
     margin: 1rem;
 }
 
-.logo{
+header nav a img {
+    width: 11rem;
+    height: 9rem;
+    margin-left: 2rem;
+}
+
+/* .logo{
     width: 100%;
     height: 10rem;
-}
+} */
 
 header nav ul li a:hover{
     color: #2E5951;
@@ -287,10 +292,9 @@ article p{
 }
 
 .carousel-item{
-    width: 90%;
+    width: 100%;
     align-items: center;
     justify-content: center;
-    margin-left: 5rem;
 }
 
 
@@ -314,10 +318,15 @@ article p{
 }
 /* Preguntas frecuentes*/
 
+.parallax {
+    width: 100%;
+    height: 50%;
+}
+
 article{
-    /* background:#2E5951; */
+    background: black;
     width: 80%;
-    margin-bottom: 2rem;
+    margin-left: 5rem;
     padding: 2rem;
     margin: 2rem;
 }
@@ -338,9 +347,12 @@ textarea{
 iframe{
     align-items:flex-start;
     display: block;
+    width: 90%;
+    margin-left: 1rem;
 }
 
 .formulario{
+    width: 50%;
     margin: 1rem;
     padding: 1rem;
 }
@@ -415,23 +427,30 @@ iframe{
         height: 15rem;
         background-color: none;
         flex-direction: column; 
+        text-align: center;
     }
     
     header nav{
-        margin-left: 3rem;
+
+        /* margin-left: 2rem; */
         margin: 2rem;
+        margin-right: 3rem;
     }
     
     /* header nav{
         flex-direction: column;
-    }
-    
-    header nav ul{
-        flex-direction: column;
     } */
     
+    header nav ul{
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-right: auto;
+
+    }
+    
     .logo{
-        width: 100%;
+        width: 80%;
         height: 30rem;
         flex-direction: column;
         margin: 4rem;
@@ -497,13 +516,6 @@ header nav ul{
     flex-direction: column;
 } */
 
-.logo{
-    width: 100%;
-    height: 20rem;
-    flex-direction: column;
-    margin: 2rem;
-    padding: 2rem;
-}
 
 .cards{
     display: inline-block;
@@ -523,68 +535,105 @@ header nav ul{
     margin-left: 2rem;
 } */
 
+p {
+    font-size: 1rem;
+    text-align: justify;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    
+}
+
+
 }
 
 /* Mobile */
 
 @media screen and (max-width: 400px) {
     
-    /* .contenedor{
+    .contenedor{
 
         grid-template-columns: 1fr;
-        grid-template-rows: 0.5fr 3fr 3fr 0.3fr;
+        grid-template-rows: 2fr 2fr 3fr 0.3fr;
         grid-template-areas: 
-        
+
         "menu"
         "main"
-        "section" 
+        "section"
         "footer";
-    } */
+    }
 
-    
+    .contenedor header{
+        width: 100%;
+    }
+
+    .contenedor header nav{
+        width: 78%;
+        margin-right: 3rem;
+    }
+
 
     header{
         background-color: none;
         flex-direction: column; 
-        width: 100%;
-        height: 45rem;
-        padding: none;
-        margin: none;
+        height: 50rem;
         gap: 2rem;
     }
 
     header nav{
         flex-direction: column;
-        padding: 5rem;
+        padding: 4rem;
     }
 
     header nav ul{
         flex-direction: column;
-        margin-top: 5rem;
+        margin-top: 10rem;
+        margin-right: 3rem;
     }
 
-    .logo{
-        width: 30rem;
-        height: 30rem;
-        padding: 1rem;
-        gap: 1rem;
+    header nav a img {
+        width: 11rem;
+        height: 9rem;
+        margin-right: 4rem;
+
     }
+
 
     iframe{
         width: 100%;
     }
 
+    .formulario{
+        width: 90%;
+    }
+
     main{
-        width: 80%;
+        width: 90%;
     }
 
     .cards{
+        height: 80%;
         flex-direction: column;
     }
 
     .datos{
         margin-top: 1rem;
+
     }
+
+    p{
+        width: 100%;
+        font-size: 1rem;
+        text-align: justify;
+        font-family: "Oswald", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: <weight>;
+        font-style: normal;
+        /* margin-left: 1rem; */
+        
+    }
+    
 
 
 }
