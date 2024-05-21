@@ -238,7 +238,6 @@ html body #nosotros {
 }
 html body #nosotros .estudio {
   width: 50%;
-  display: flex;
 }
 html body #nosotros .text {
   width: 50%;
@@ -286,6 +285,60 @@ html body #nosotros .text .btn a {
 }
 html body #nosotros .text .btn a .btn a:hover {
   color: orange;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  html body #nosotros {
+    flex-direction: column;
+    width: 100%;
+    height: 80%;
+    justify-content: flex-start;
+    margin: 0%;
+    margin-right: 100rem;
+  }
+  html body #nosotros .estudio {
+    width: 15rem;
+    height: 10rem;
+  }
+  html body #nosotros .text {
+    font-size: 0.5rem;
+    width: 15rem;
+    margin-right: 50px;
+  }
+  html body #nosotros .text h2 {
+    font-size: 1.5rem;
+  }
+  html body #nosotros .text .btn {
+    width: 10rem;
+  }
+  html body #nosotros .text .btn a {
+    font-size: 0.5rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  html body #nosotros {
+    flex-direction: column;
+    width: 100%;
+    justify-content: flex-start;
+    margin: 0%;
+  }
+  html body #nosotros .estudio {
+    width: 50%;
+  }
+  html body #nosotros .text {
+    width: 50%;
+    font-size: 1rem;
+    width: 15rem;
+    margin-right: 50px;
+  }
+  html body #nosotros .text h2 {
+    font-size: 2rem;
+  }
+  html body #nosotros .text .btn {
+    width: 20rem;
+  }
+  html body #nosotros .text .btn a {
+    font-size: 1rem;
+  }
 }
 html body .parrafo {
   font-size: 1rem;
@@ -354,37 +407,27 @@ html body article p {
     font-size: 1rem;
   }
 }
-html body header {
-  grid-area: menu;
-}
-html body main {
-  grid-area: main;
-}
-html body section {
-  grid-area: section;
-}
-html body footer {
-  grid-area: footer;
-  width: 100%;
-  height: 6rem;
-}
 html body .contenedor {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 0.3fr 6.5fr 5.5fr 0.3fr;
-  grid-template-areas: "menu menu menu" "main main main" "section section" "footer footer footer";
+  grid-template-areas: "menu menu menu" "main main main" "section section section" "footer footer footer";
   width: 100%;
   height: 100hv;
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
-  html body .contenedor .contenedor {
-    display: grid;
-    grid-template-columns: 1;
-    grid-template-rows: 0.3fr 6.5fr 5.5fr 5.5fr 0.3fr;
-    grid-template-areas: "menu" "main" "section" "section" "footer";
-    width: 100%;
-    height: 100hv;
-  }
+html body .contenedor header {
+  grid-area: menu;
+}
+html body .contenedor main {
+  grid-area: main;
+}
+html body .contenedor section {
+  grid-area: section;
+}
+html body .contenedor footer {
+  grid-area: footer;
+  width: 100%;
+  height: 6rem;
 }
 @keyframes moverBoton {
   0% {
