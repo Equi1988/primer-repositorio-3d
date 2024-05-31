@@ -17,6 +17,8 @@
 }
 
 @import "./_responsive.scss";
+@import "./header";
+@import "./main";
 
 $negro: #012326; 
 $grisoscuro: #000C0D;
@@ -37,106 +39,10 @@ html{
             width: 100%;
         }
 
-        header{
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 0 20px;
-            background-color: none;
-            height: 10%;
-            nav{
-                font-size: 1.5rem;
-            }
-            nav a img {
-                width: 11rem;
-                height: 9rem;
-                margin-left: 4rem;
-                @include mobile{
-                    margin-right: 10rem;
-                }
-                @include tablet{
-                    margin-left: 15rem;
-                }
-            }
-        }
             a {
             text-decoration: none;
                     color: #eef1f0;
                 }
-        main{
-            background-color: $negro;
-            color: #eef1f0;
-            overflow: hidden;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: row;
-            .imgfqs{
-                width: 100%;
-                margin-left: 1rem;
-            }
-            section img{
-                display: block;
-                flex-direction: row;   
-                margin: auto;
-            }
-            .portada{
-                max-width: 95%;
-                max-height: 95%;
-                align-items: center;
-                position: relative;
-                justify-content: center;
-                margin-bottom: 2rem;
-                padding: 2rem;
-                margin: auto;
-            }
-            .carousel-item{
-                width: 90%;
-                margin-left: 5rem;
-                align-items: center;
-                justify-content: center;
-                @include mobile{
-                    width: 100%;
-                    margin: 0;
-                }
-                @include tablet{
-                    width: 100%;
-                    margin-left: 0;
-                    
-                }
-            }
-            input,label,select{
-                display: flex;
-                margin-bottom: auto;
-                text-align: center;
-            }
-            
-            textarea{
-                text-align: center;
-                display: block;
-            }
-            
-            iframe{
-                align-items:flex-start;
-                display: block;
-                width: 90%;
-                margin-left: 1rem;
-            }
-            
-            .formulario{
-                width: 90%;
-                margin: 1rem;
-                padding: 1rem;
-            }
-            .btn-sumit{
-                align-items:baseline;
-                height: 2rem;
-                width: 2rem;
-                border-radius: 2%;
-                padding: 2rem;
-                margin: 2rem;
-            }
-        }
         h1{
             text-align: center;
             padding: 2rem;
@@ -219,12 +125,14 @@ html{
                 display: inline-block;
                 align-items: center;
                 justify-content: center;
+                margin-left: 2rem;
             }
             @include tablet{
                 flex-direction: column;
                 display: inline-block;
                 align-items: center;
                 justify-content: center;
+                margin-left: 2rem;
             }
             @include desktop{
                 margin-left: 5rem;
@@ -396,20 +304,30 @@ html{
                 max-width: 30%;
                 border:#C4AA25 2px solid;
             }
-            img:hover{
+            img & hover{
                 border:#E8C61C 2px solid;
             }
         }
 
         article{
+            display: inline-block;
             background: #363232;
             background: linear-gradient(90deg,#363232 0%, #006bff 80%);
             background: -webkit-linear-gradient(90deg,#363232 0%, #006bff 80%);
             background: -moz-linear-gradient(90deg,#363232 0%, #006bff 80%);
             width: 80%;
-            margin-left: 5rem;
             padding: 2rem;
             margin: 2rem;
+
+            @include mobile{
+                margin-left: 2.7rem;
+            }
+
+            @include tablet{
+                margin-left: 3.5rem;
+            }
+
+
             p{
                 font-size: 1.5rem;
                 text-align: justify;

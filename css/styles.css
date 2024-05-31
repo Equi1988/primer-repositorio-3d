@@ -12,6 +12,112 @@
   width: 100%;
 }
 
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  background-color: none;
+}
+header nav {
+  font-size: 1.5rem;
+}
+header nav a img {
+  width: 11rem;
+  height: 9rem;
+  margin-left: 4rem;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  header nav a img {
+    margin-right: 10rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  header nav a img {
+    margin-left: 15rem;
+  }
+}
+
+main {
+  color: #eef1f0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+main .imgfqs {
+  width: 100%;
+  margin-left: 1rem;
+}
+main section img {
+  display: block;
+  flex-direction: row;
+  margin: auto;
+}
+main .portada {
+  max-width: 95%;
+  max-height: 95%;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  margin: auto;
+}
+main .carousel-item {
+  width: 90%;
+  margin-left: 5rem;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  main .carousel-item {
+    width: 100%;
+    margin: 0;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  main .carousel-item {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+main .d-block w-100 {
+  width: 200px;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main input, main label, main select {
+  display: flex;
+  margin-bottom: auto;
+  text-align: center;
+}
+main textarea {
+  text-align: center;
+  display: block;
+}
+main iframe {
+  align-items: flex-start;
+  display: block;
+  width: 90%;
+  margin-left: 1rem;
+}
+main .formulario {
+  width: 90%;
+  margin: 1rem;
+  padding: 1rem;
+}
+main .btn-sumit {
+  align-items: baseline;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 2%;
+  padding: 2rem;
+  margin: 2rem;
+}
+
 html {
   font-size: 62, 5%;
 }
@@ -29,109 +135,9 @@ html body {
     width: 100%;
   }
 }
-html body header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 20px;
-  background-color: none;
-  height: 10%;
-}
-html body header nav {
-  font-size: 1.5rem;
-}
-html body header nav a img {
-  width: 11rem;
-  height: 9rem;
-  margin-left: 4rem;
-}
-@media screen and (min-width: 320px) and (max-width: 767px) {
-  html body header nav a img {
-    margin-right: 10rem;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  html body header nav a img {
-    margin-left: 15rem;
-  }
-}
 html body a {
   text-decoration: none;
   color: #eef1f0;
-}
-html body main {
-  background-color: #012326;
-  color: #eef1f0;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-}
-html body main .imgfqs {
-  width: 100%;
-  margin-left: 1rem;
-}
-html body main section img {
-  display: block;
-  flex-direction: row;
-  margin: auto;
-}
-html body main .portada {
-  max-width: 95%;
-  max-height: 95%;
-  align-items: center;
-  position: relative;
-  justify-content: center;
-  margin-bottom: 2rem;
-  padding: 2rem;
-  margin: auto;
-}
-html body main .carousel-item {
-  width: 90%;
-  margin-left: 5rem;
-  align-items: center;
-  justify-content: center;
-}
-@media screen and (min-width: 320px) and (max-width: 767px) {
-  html body main .carousel-item {
-    width: 100%;
-    margin: 0;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  html body main .carousel-item {
-    width: 100%;
-    margin-left: 0;
-  }
-}
-html body main input, html body main label, html body main select {
-  display: flex;
-  margin-bottom: auto;
-  text-align: center;
-}
-html body main textarea {
-  text-align: center;
-  display: block;
-}
-html body main iframe {
-  align-items: flex-start;
-  display: block;
-  width: 90%;
-  margin-left: 1rem;
-}
-html body main .formulario {
-  width: 90%;
-  margin: 1rem;
-  padding: 1rem;
-}
-html body main .btn-sumit {
-  align-items: baseline;
-  height: 2rem;
-  width: 2rem;
-  border-radius: 2%;
-  padding: 2rem;
-  margin: 2rem;
 }
 html body h1 {
   text-align: center;
@@ -212,6 +218,7 @@ html body .cards .datos {
     display: inline-block;
     align-items: center;
     justify-content: center;
+    margin-left: 2rem;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -220,6 +227,7 @@ html body .cards .datos {
     display: inline-block;
     align-items: center;
     justify-content: center;
+    margin-left: 2rem;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -382,17 +390,27 @@ html body .fotos img {
   max-width: 30%;
   border: #C4AA25 2px solid;
 }
-html body .fotos img:hover {
+img html body .fotos hover {
   border: #E8C61C 2px solid;
 }
 html body article {
+  display: inline-block;
   background: #363232;
   background: linear-gradient(90deg, #363232 0%, #006bff 80%);
   background: -moz-linear-gradient(90deg, #363232 0%, #006bff 80%);
   width: 80%;
-  margin-left: 5rem;
   padding: 2rem;
   margin: 2rem;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  html body article {
+    margin-left: 2.7rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  html body article {
+    margin-left: 3.5rem;
+  }
 }
 html body article p {
   font-size: 1.5rem;
