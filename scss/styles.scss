@@ -125,7 +125,7 @@ html{
                 display: inline-block;
                 align-items: center;
                 justify-content: center;
-                margin-left: 2rem;
+                margin-left: 1.5rem;
             }
             @include tablet{
                 flex-direction: column;
@@ -260,8 +260,6 @@ html{
             
             }
         }
-
-
         .parrafo{
             font-size: 1rem;
             text-align: justify;
@@ -270,6 +268,7 @@ html{
             font-weight: weight;
             font-style: normal; 
         }
+
         footer{
             background-color: black;
             color: #eef1f0;
@@ -322,12 +321,9 @@ html{
             @include mobile{
                 margin-left: 2.7rem;
             }
-
             @include tablet{
                 margin-left: 3.5rem;
             }
-
-
             p{
                 font-size: 1.5rem;
                 text-align: justify;

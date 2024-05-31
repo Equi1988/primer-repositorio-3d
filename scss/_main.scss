@@ -25,6 +25,24 @@ main{
         padding: 2rem;
         margin: auto;
     }
+
+    .carousel-item active {
+        width: 90%;
+        margin-left: 5rem;
+        align-items: center;
+        justify-content: center;
+        
+        @include mobile{
+            width: 100%;
+            object-fit: cover;
+        }
+        @include tablet{
+            width: 100%;
+            margin-left: 0;
+            
+        }
+    }
+    
     .carousel-item{
         width: 90%;
         margin-left: 5rem;
@@ -32,6 +50,7 @@ main{
         justify-content: center;
         @include mobile{
             width: 100%;
+            object-fit: cover;
             margin: 0;
         }
         @include tablet{
