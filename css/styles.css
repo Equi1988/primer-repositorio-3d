@@ -60,7 +60,7 @@ html body a {
   color: #eef1f0;
 }
 html body main {
-  /* background-color: #012326; */
+  background-color: #012326;
   color: #eef1f0;
   overflow: hidden;
   display: flex;
@@ -283,7 +283,7 @@ html body #nosotros .text .btn a {
   font-size: 1.6rem;
   transition: color 2s;
 }
-html body #nosotros .text .btn a .btn a:hover {
+.btn a html body #nosotros .text .btn a hover {
   color: orange;
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
