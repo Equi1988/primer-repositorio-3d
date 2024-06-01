@@ -249,6 +249,15 @@ main .btn-sumit {
   margin: 2rem;
 }
 
+.slide {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.slide img {
+  height: 65hv;
+}
+
 html {
   font-size: 62, 5%;
 }
