@@ -12,6 +12,116 @@
   width: 100%;
 }
 
+#nosotros {
+  margin: 150px auto;
+  width: 70%;
+}
+#nosotros .estudio {
+  max-width: 400px;
+  float: left;
+  border: 5px solid white;
+  margin-right: 25px;
+  border-radius: 10px;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  #nosotros .estudio {
+    max-width: 200px;
+    margin: 20px;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  #nosotros .estudio {
+    max-width: 300px;
+    margin: 20px;
+    align-items: center;
+  }
+}
+#nosotros .text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+#nosotros .text h2 {
+  color: aliceblue;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  text-align: left;
+  font-size: 3rem;
+  letter-spacing: 0.5rem;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  #nosotros .text h2 {
+    font-size: 2rem;
+  }
+}
+#nosotros .text h3 {
+  color: aliceblue;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  text-align: left;
+  font-size: 3rem;
+  letter-spacing: 0.5rem;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  #nosotros .text h3 {
+    font-size: 2rem;
+  }
+}
+#nosotros .text p {
+  font-size: 1rem;
+  text-align: justify;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  #nosotros .text p {
+    width: 20rem;
+    height: 15rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  #nosotros .text p {
+    width: 20rem;
+    height: 15rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #nosotros .text p {
+    width: 20rem;
+    height: 15rem;
+  }
+}
+#nosotros .text .btn {
+  width: 20rem;
+  height: 3rem;
+  background-color: black;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#nosotros .text .btn a {
+  color: aliceblue;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  transition: color 2s;
+}
+.btn a #nosotros .text .btn a hover {
+  color: orange;
+}
+
 header {
   display: flex;
   align-items: center;
@@ -196,6 +306,13 @@ html body h5 {
   font-weight: 400;
   font-style: normal;
 }
+html body h6 {
+  padding: 1rem;
+  font-size: 2rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 html body p {
   font-size: 1.2rem;
   text-align: justify;
@@ -259,116 +376,6 @@ html body .cards .datos {
     justify-content: center;
   }
 }
-html body #nosotros {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 8rem;
-}
-html body #nosotros .estudio {
-  width: 50%;
-}
-html body #nosotros .text {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-html body #nosotros .text h2 {
-  color: aliceblue;
-  font-family: "Bebas Neue", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  text-align: left;
-  font-size: 4rem;
-  letter-spacing: 0.5rem;
-}
-html body #nosotros .text p {
-  font-size: 1rem;
-  text-align: justify;
-  font-family: "Oswald", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: weight;
-  font-style: normal;
-}
-html body #nosotros .text .btn {
-  width: 20rem;
-  height: 3rem;
-  background-color: black;
-  margin-top: 1rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-html body #nosotros .text .btn a {
-  color: aliceblue;
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 1.6rem;
-  transition: color 2s;
-}
-.btn a html body #nosotros .text .btn a hover {
-  color: orange;
-}
-@media screen and (min-width: 320px) and (max-width: 767px) {
-  html body #nosotros {
-    flex-direction: column;
-    width: 100%;
-    height: 80%;
-    justify-content: flex-start;
-    margin: 0%;
-    margin-right: 100rem;
-  }
-  html body #nosotros .estudio {
-    width: 15rem;
-    height: 10rem;
-  }
-  html body #nosotros .text {
-    font-size: 0.5rem;
-    width: 15rem;
-    margin-right: 50px;
-  }
-  html body #nosotros .text h2 {
-    font-size: 1.5rem;
-  }
-  html body #nosotros .text .btn {
-    width: 10rem;
-  }
-  html body #nosotros .text .btn a {
-    font-size: 0.5rem;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  html body #nosotros {
-    flex-direction: column;
-    width: 100%;
-    justify-content: flex-start;
-    margin: 0%;
-  }
-  html body #nosotros .estudio {
-    width: 50%;
-  }
-  html body #nosotros .text {
-    width: 50%;
-    font-size: 1rem;
-    width: 15rem;
-    margin-right: 50px;
-  }
-  html body #nosotros .text h2 {
-    font-size: 2rem;
-  }
-  html body #nosotros .text .btn {
-    width: 20rem;
-  }
-  html body #nosotros .text .btn a {
-    font-size: 1rem;
-  }
-}
 html body .parrafo {
   font-size: 1rem;
   text-align: justify;
@@ -415,7 +422,6 @@ img html body .fotos hover {
   border: #E8C61C 2px solid;
 }
 html body article {
-  display: inline-block;
   background: #363232;
   background: linear-gradient(90deg, #363232 0%, #006bff 80%);
   background: -moz-linear-gradient(90deg, #363232 0%, #006bff 80%);

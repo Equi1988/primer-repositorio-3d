@@ -1,0 +1,120 @@
+
+#nosotros {
+    margin: 150px auto;
+    width: 70%;
+    // display: flex;
+    // flex-direction: row;
+    // justify-content: space-between;
+    // padding: 8rem; 
+
+    .estudio{
+        max-width: 400px;
+        float: left;
+        border: 5px solid white;
+        margin-right: 25px;
+        border-radius: 10px;
+
+        @include mobile{
+            max-width: 200px;
+            margin: 20px;
+            align-items: center;
+
+        }
+
+        @include tablet{
+            max-width: 300px;
+            margin: 20px;
+            align-items: center;
+
+        }
+    }
+
+    .text {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+
+
+        h2 {
+            color: aliceblue;
+            font-family: "Bebas Neue", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            text-align: left;
+            font-size: 3rem;
+            letter-spacing: 0.5rem;
+
+            @include mobile {
+                font-size: 2rem;
+            }
+
+        }
+
+        h3{
+
+            color: aliceblue;
+            font-family: "Bebas Neue", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            text-align: left;
+            font-size: 3rem;
+            letter-spacing: 0.5rem;
+            
+            @include mobile {
+                font-size: 2rem;
+            }
+
+        }
+
+            p{
+                font-size: 1rem;
+                text-align: justify;
+                font-family: "Oswald", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: weight;
+                font-style: normal; 
+
+                @include mobile {
+                    width: 20rem;
+                    height: 15rem;
+                }
+
+                @include tablet {
+                    width: 20rem;
+                    height: 15rem;
+                }
+
+                @include desktop {
+                    width: 20rem;
+                    height: 15rem;
+                }
+
+            }
+        
+        .btn{
+            width: 20rem;
+            height: 3rem;
+            background-color: black;
+            margin-top: 1rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            a {
+                color:aliceblue;
+                font-family: "Poppins", sans-serif;
+                font-weight: 500;
+                font-style: normal;
+                text-align: center;
+                text-transform: uppercase;
+                font-size: 1.6rem;
+                transition: color 2s;
+                .btn a & hover{
+                    color: orange;
+                }
+            }
+        }
+    }
+}
