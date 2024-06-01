@@ -1,9 +1,35 @@
 .slide{
     width: 100%;
     margin-top: 10px;
+
+    img{
+        height: 65hv;
+    }
+
 }
 
-.slide img{
+@include mobile{
+    .slide{
+        width: 90%;
+        position: relative;
+        display: inline-block;
+        height: 200px;
 
-    height: 65hv;
+        img{
+            width: 200px;
+        }
+    }    
+}
+
+@include tablet{
+    .slide{
+        width: 90%;
+        position: relative;
+        display: inline-block;
+        height: 400px;
+
+        img{
+            width: 200px;
+        }
+    }    
 }
